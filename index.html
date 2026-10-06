@@ -1,670 +1,998 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouaz Brai | Software Engineer · Graphic Designer · Print Production</title>
+    <meta name="description" content="Mouaz Brai — Software Engineer, Graphic Designer, and Print Production Specialist building websites, business software, and digital solutions for print businesses and other companies.">
 
-    <title>Portfolio | Mouaz Brai</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <script src="https://cdn.tailwindcss.com"></script>
-
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
+<body class="font-sans text-slate-800 antialiased overflow-x-hidden min-h-screen">
 
-<body>
+<div class="max-w-[1360px] mx-auto px-4 sm:px-6 py-4 sm:py-6">
 
-    <!-- Main Container -->
-    <div class="w-full max-w-7xl mx-auto p-5 lg:p-10">
+    <!-- nav -->
+    <nav class="sticky top-3 sm:top-4 z-40 flex items-center justify-between gap-2 px-3 sm:px-5 py-2.5 rounded-2xl bg-white/80 backdrop-blur-2xl border border-slate-200/80 shadow-[0_10px_40px_-18px_rgba(15,23,42,0.22)] mb-5 sm:mb-6">
 
-        <!-- Hero Section -->
-        <section class="glass-card rounded-[45px] p-8 lg:p-12 mb-6 overflow-hidden relative">
+        <a href="#" class="flex items-center gap-2.5 shrink-0">
+            <span class="w-9 h-9 grid place-items-center rounded-xl bg-gradient-to-br from-navy to-navy-600 text-white text-[11px] font-black tracking-tight">MB</span>
+            <span class="hidden sm:block text-navy font-black text-[13px] tracking-tight" data-i18n="brand.name">Mouaz Brai</span>
+        </a>
 
-            <div class="absolute -top-32 -right-32 w-72 h-72 bg-cyan-400/10 rounded-full blur-3xl"></div>
-            <div class="absolute -bottom-32 -left-32 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl"></div>
+        <div class="hidden lg:flex items-center gap-0.5">
+            <a href="#skills"    class="px-3 py-2 text-[11px] font-bold text-slate-500 rounded-lg hover:text-code hover:bg-code/5 transition" data-i18n="nav.skills">المهارات</a>
+            <a href="#services"  class="px-3 py-2 text-[11px] font-bold text-slate-500 rounded-lg hover:text-design hover:bg-design/5 transition" data-i18n="nav.services">الخدمات</a>
+            <a href="#projects"  class="px-3 py-2 text-[11px] font-bold text-slate-500 rounded-lg hover:text-print hover:bg-print/5 transition" data-i18n="nav.projects">المشاريع</a>
+            <a href="#design"    class="px-3 py-2 text-[11px] font-bold text-slate-500 rounded-lg hover:text-ai hover:bg-ai/5 transition" data-i18n="nav.design">الأعمال البصرية</a>
+            <a href="#experience" class="px-3 py-2 text-[11px] font-bold text-slate-500 rounded-lg hover:text-print hover:bg-print/5 transition" data-i18n="nav.experience">الخبرة</a>
+            <a href="#about"     class="px-3 py-2 text-[11px] font-bold text-slate-500 rounded-lg hover:text-code hover:bg-code/5 transition" data-i18n="nav.about">نبذة</a>
+        </div>
 
-            <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        <div class="flex items-center gap-2">
 
-                <!-- Profile -->
-                <div class="lg:col-span-4 flex flex-col items-center lg:items-start">
-
-                    <div class="profile-avatar mb-6">
-                        MB
-                    </div>
-
-                    <p class="text-cyan-400 text-xs font-bold tracking-[0.25em] uppercase mb-3">
-                        Web Developer & Graphic Designer
-                    </p>
-
-                    <h1 class="text-4xl lg:text-6xl font-black tracking-tight mb-5">
-                        Mouaz Brai
-                    </h1>
-
-                    <p class="text-gray-400 text-sm leading-relaxed max-w-xl">
-                        Django Web Developer focused on building modern web applications,
-                        backend systems and practical digital solutions.
-                        I also work in graphic design and professional printing.
-                    </p>
-
-                    <div class="flex gap-4 mt-7">
-
-                        <a href="https://github.com/mouazbrai"
-                            target="_blank"
-                            class="social-link">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-
-                        <a href="https://www.linkedin.com/in/mouaz-brai-55ba632b3/"
-                            target="_blank"
-                            class="social-link">
-                            <i class="fa-brands fa-linkedin"></i>
-                        </a>
-
-                    </div>
-
-                </div>
-
-
-                <!-- Main Introduction -->
-                <div class="lg:col-span-5">
-
-                    <div class="mb-6">
-
-                        <span class="section-label">
-                            MY PROFILE
-                        </span>
-
-                        <h2 class="text-3xl lg:text-4xl font-bold leading-tight mt-3">
-                            From
-                            <span class="text-cyan-400">Design</span>
-                            to
-                            <span class="text-cyan-400">Web Development</span>
-                        </h2>
-
-                    </div>
-
-                    <p class="text-gray-400 text-sm leading-7">
-                        I combine web development and graphic design to create complete
-                        digital and visual solutions. My main web development stack is
-                        Django, Python, PostgreSQL, HTML, CSS, JavaScript and Tailwind CSS.
-                    </p>
-
-                    <div class="flex flex-wrap gap-2 mt-6">
-
-                        <span class="skill-badge px-3 py-2 rounded-xl">
-                            Django
-                        </span>
-
-                        <span class="skill-badge px-3 py-2 rounded-xl">
-                            Python
-                        </span>
-
-                        <span class="skill-badge px-3 py-2 rounded-xl">
-                            PostgreSQL
-                        </span>
-
-                        <span class="skill-badge px-3 py-2 rounded-xl">
-                            JavaScript
-                        </span>
-
-                        <span class="skill-badge px-3 py-2 rounded-xl">
-                            Tailwind CSS
-                        </span>
-
-                        <span class="skill-badge px-3 py-2 rounded-xl">
-                            Graphic Design
-                        </span>
-
-                    </div>
-
-                </div>
-
-
-                <!-- Quick Overview -->
-                <div class="lg:col-span-3 grid grid-cols-2 gap-3">
-
-                    <div class="stat-card">
-                        <i class="fa-solid fa-code"></i>
-                        <strong>Web</strong>
-                        <span>Development</span>
-                    </div>
-
-                    <div class="stat-card">
-                        <i class="fa-solid fa-server"></i>
-                        <strong>Backend</strong>
-                        <span>Django</span>
-                    </div>
-
-                    <div class="stat-card">
-                        <i class="fa-solid fa-database"></i>
-                        <strong>Database</strong>
-                        <span>PostgreSQL</span>
-                    </div>
-
-                    <div class="stat-card">
-                        <i class="fa-solid fa-palette"></i>
-                        <strong>Design</strong>
-                        <span>Graphic & Print</span>
-                    </div>
-
-                </div>
-
+            <div class="flex items-center p-0.5 rounded-xl bg-slate-100 border border-slate-200" role="tablist" aria-label="Language">
+                <button class="lang-btn active px-2.5 py-1.5 text-[10px] font-black rounded-lg transition" data-lang="ar" aria-label="العربية">AR</button>
+                <button class="lang-btn px-2.5 py-1.5 text-[10px] font-black rounded-lg text-slate-500 hover:text-navy transition" data-lang="fr" aria-label="Français">FR</button>
+                <button class="lang-btn px-2.5 py-1.5 text-[10px] font-black rounded-lg text-slate-500 hover:text-navy transition" data-lang="en" aria-label="English">EN</button>
             </div>
 
-        </section>
+            <a href="https://wa.me/213671095233" target="_blank" rel="noopener"
+               class="hidden sm:inline-flex items-center gap-1.5 text-[10px] font-extrabold text-white bg-gradient-to-r from-code to-code-dark px-3.5 py-2.5 rounded-xl hover:shadow-lg hover:shadow-code/30 hover:-translate-y-0.5 transition">
+                <i class="fa-brands fa-whatsapp text-[12px]"></i>
+                <span data-i18n="nav.contact">تواصل</span>
+            </a>
+        </div>
+    </nav>
+    <!-- nav end -->
 
+    <!-- hero -->
+    <section class="relative overflow-hidden rounded-[32px] bg-navy shadow-[0_30px_70px_-30px_rgba(7,11,26,0.6)] p-6 sm:p-10 lg:p-14 animate-fadeUp">
 
-        <!-- Skills Navigation -->
-        <section class="glass-card rounded-[45px] p-8 lg:p-10 mb-6">
+        <div class="pointer-events-none absolute -top-40 -right-40 w-[420px] h-[420px] rounded-full bg-code/25 blur-[90px]"></div>
+        <div class="pointer-events-none absolute -bottom-52 -left-32 w-[380px] h-[380px] rounded-full bg-design/20 blur-[100px]"></div>
+        <div class="pointer-events-none absolute top-1/2 right-1/4 w-[220px] h-[220px] rounded-full bg-ai/15 blur-[80px]"></div>
 
-            <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+        <div class="pointer-events-none absolute inset-0 opacity-[0.06]" style="background-image: linear-gradient(rgba(255,255,255,.4) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.4) 1px, transparent 1px); background-size: 48px 48px;"></div>
 
-                <div>
-                    <span class="section-label">
-                        SKILLS
+        <div class="relative grid grid-cols-1 lg:grid-cols-[1.1fr_1.25fr_0.75fr] gap-8 lg:gap-10 items-center">
+
+            <div class="flex flex-col">
+                <div class="w-24 h-24 sm:w-28 sm:h-28 grid place-items-center rounded-[28px] bg-gradient-to-br from-code via-design to-print text-white text-3xl font-black shadow-[0_20px_50px_-15px_rgba(99,102,241,0.6)] -rotate-3 hover:rotate-0 hover:scale-105 transition duration-500 mb-6 animate-float">
+                    MB
+                </div>
+
+                <div class="flex items-center gap-2 mb-4 w-fit px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-400/20">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulseRing"></span>
+                    <span class="text-[10px] font-extrabold tracking-[0.1em] text-emerald-300 uppercase" data-i18n="hero.available">متاح للفرص</span>
+                </div>
+
+                <div class="text-[10px] font-extrabold tracking-[0.22em] uppercase text-sky-300/90 mb-3" data-i18n="hero.role">
+                    مهندس برمجيات · مطوّر Django · متخصص طباعة
+                </div>
+
+                <h1 class="text-white font-black leading-[0.95] tracking-tight text-[clamp(38px,6vw,64px)]">
+                    <span data-i18n="hero.firstname">معاذ</span><br>
+                    <span class="bg-gradient-to-r from-sky-300 via-design-light to-print-light gradient-text" data-i18n="hero.lastname">براي.</span>
+                </h1>
+            </div>
+
+            <div class="flex flex-col">
+                <p class="text-slate-300/90 text-sm sm:text-[15px] leading-loose max-w-2xl mb-6" data-i18n="hero.desc">
+                    مهندس برمجيات ومطوّر ويب متخصص في بناء تطبيقات Django وأنظمة الأتمتة، مع خبرة ميدانية في
+                    التصميم الجرافيكي وإنتاج المطبوعات. أجمع بين هندسة البرمجيات، الذكاء الاصطناعي، والحلول
+                    الطباعية لبناء أنظمة رقمية متكاملة ترفع الإنتاجية.
+                </p>
+
+                <div class="flex flex-wrap gap-2 mb-6">
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[10px] font-bold bg-code/15 border border-code/30 text-code-light">
+                        <i class="fa-solid fa-code text-[9px]"></i> <span data-i18n="chip.software">هندسة برمجيات</span>
                     </span>
-
-                    <h2 class="text-2xl lg:text-3xl font-bold mt-2">
-                        Technical Skills
-                    </h2>
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[10px] font-bold bg-design/15 border border-design/30 text-design-light">
+                        <i class="fa-solid fa-palette text-[9px]"></i> <span data-i18n="chip.design">تصميم جرافيكي</span>
+                    </span>
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[10px] font-bold bg-print/15 border border-print/30 text-print-light">
+                        <i class="fa-solid fa-print text-[9px]"></i> <span data-i18n="chip.print">إنتاج طباعي</span>
+                    </span>
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[10px] font-bold bg-ai/15 border border-ai/30 text-ai-light">
+                        <i class="fa-solid fa-robot text-[9px]"></i> <span data-i18n="chip.ai">ذكاء اصطناعي</span>
+                    </span>
                 </div>
 
-
-                <div class="flex flex-wrap gap-2">
-
-                    <button class="skill-filter active" data-filter="all">
-                        All
-                    </button>
-
-                    <button class="skill-filter" data-filter="web">
-                        Web
-                    </button>
-
-                    <button class="skill-filter" data-filter="backend">
-                        Backend
-                    </button>
-
-                    <button class="skill-filter" data-filter="database">
-                        Database
-                    </button>
-
-                    <button class="skill-filter" data-filter="deployment">
-                        Deployment
-                    </button>
-
-                    <button class="skill-filter" data-filter="design">
-                        Design
-                    </button>
-
+                <div class="flex flex-wrap gap-2.5">
+                    <a href="#skills" class="inline-flex items-center gap-2 px-4 py-3 rounded-xl bg-white text-navy text-[11px] font-extrabold hover:bg-sky-50 hover:-translate-y-0.5 transition">
+                        <i class="fa-solid fa-arrow-down"></i> <span data-i18n="hero.cta.skills">استعرض المهارات</span>
+                    </a>
+                    <a href="#credentials"
+                       class="inline-flex items-center gap-2 px-4 py-3 rounded-xl text-white bg-gradient-to-r from-print to-print-dark text-[11px] font-extrabold hover:shadow-lg hover:shadow-print/40 hover:-translate-y-0.5 transition">
+                        <i class="fa-solid fa-file-pdf"></i> <span data-i18n="hero.cta.mfe">الشهادات والمشاريع</span>
+                    </a>
+                    <a href="https://github.com/mouazbrai" target="_blank" rel="noopener"
+                       class="inline-flex items-center gap-2 px-4 py-3 rounded-xl text-slate-300 border border-white/10 bg-white/5 text-[11px] font-extrabold hover:text-white hover:border-white/30 hover:-translate-y-0.5 transition">
+                        <i class="fa-brands fa-github text-base"></i> GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/mouaz-brai-55ba632b3/" target="_blank" rel="noopener"
+                       class="inline-flex items-center gap-2 px-4 py-3 rounded-xl text-slate-300 border border-white/10 bg-white/5 text-[11px] font-extrabold hover:text-white hover:border-white/30 hover:-translate-y-0.5 transition">
+                        <i class="fa-brands fa-linkedin text-base"></i> LinkedIn
+                    </a>
                 </div>
-
             </div>
 
+            <div class="flex flex-col lg:col-span-1 col-span-1 lg:col-auto">
+                <div class="text-[10px] font-extrabold tracking-[0.18em] uppercase text-slate-500 mb-4" data-i18n="hero.stack.title">
+                    البنية التقنية الأساسية
+                </div>
+                <div class="grid grid-cols-2 gap-2">
+                    <div class="p-3 rounded-xl bg-white/[0.04] border border-white/[0.08] hover:bg-white/[0.08] transition">
+                        <i class="fa-brands fa-python text-sky-300 text-lg"></i>
+                        <div class="mt-2 text-white text-[11px] font-black">Python</div>
+                        <div class="text-slate-500 text-[9px] mt-0.5">Django</div>
+                    </div>
+                    <div class="p-3 rounded-xl bg-white/[0.04] border border-white/[0.08] hover:bg-white/[0.08] transition">
+                        <i class="fa-solid fa-database text-emerald-300 text-lg"></i>
+                        <div class="mt-2 text-white text-[11px] font-black">SQL</div>
+                        <div class="text-slate-500 text-[9px] mt-0.5">PostgreSQL</div>
+                    </div>
+                    <div class="p-3 rounded-xl bg-white/[0.04] border border-white/[0.08] hover:bg-white/[0.08] transition">
+                        <i class="fa-solid fa-print text-amber-300 text-lg"></i>
+                        <div class="mt-2 text-white text-[11px] font-black">Prepress</div>
+                        <div class="text-slate-500 text-[9px] mt-0.5">Kodak / Heidelberg</div>
+                    </div>
+                    <div class="p-3 rounded-xl bg-white/[0.04] border border-white/[0.08] hover:bg-white/[0.08] transition">
+                        <i class="fa-solid fa-brain text-pink-300 text-lg"></i>
+                        <div class="mt-2 text-white text-[11px] font-black">AI Agents</div>
+                        <div class="text-slate-500 text-[9px] mt-0.5">Prompt Eng.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- hero end -->
 
-            <!-- Skills Grid -->
-            <div id="skills-grid"
-                class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 mt-8">
+    <!-- stats -->
+    <section class="mt-4 grid grid-cols-2 md:grid-cols-4 gap-3">
+        <div class="p-4 sm:p-5 bg-white border border-slate-200 rounded-2xl shadow-[0_6px_20px_-14px_rgba(15,23,42,0.15)]">
+            <div class="text-2xl sm:text-3xl font-black text-navy tracking-tight">3</div>
+            <div class="mt-1 text-[11px] font-bold text-slate-500" data-i18n="stats.domains">مجالات تخصص</div>
+            <div class="mt-0.5 text-[10px] text-slate-400">Software · Design · Print · AI</div>
+        </div>
+        <div class="p-4 sm:p-5 bg-white border border-slate-200 rounded-2xl shadow-[0_6px_20px_-14px_rgba(15,23,42,0.15)]">
+            <div class="text-2xl sm:text-3xl font-black text-navy tracking-tight">18+</div>
+            <div class="mt-1 text-[11px] font-bold text-slate-500" data-i18n="stats.technologies">تقنية مُتقَنة</div>
+            <div class="mt-0.5 text-[10px] text-slate-400">Frameworks · Tools · Systems</div>
+        </div>
+        <div class="p-4 sm:p-5 bg-white border border-slate-200 rounded-2xl shadow-[0_6px_20px_-14px_rgba(15,23,42,0.15)]">
+            <div class="text-2xl sm:text-3xl font-black text-navy tracking-tight">2<span class="text-base align-top">+</span></div>
+            <div class="mt-1 text-[11px] font-bold text-slate-500" data-i18n="stats.experience">أشهر خبرة تطبيقية</div>
+            <div class="mt-0.5 text-[10px] text-slate-400">Graphic Design & Print</div>
+        </div>
+        <div class="p-4 sm:p-5 bg-white border border-slate-200 rounded-2xl shadow-[0_6px_20px_-14px_rgba(15,23,42,0.15)]">
+            <div class="text-2xl sm:text-3xl font-black text-navy tracking-tight">3</div>
+            <div class="mt-1 text-[11px] font-bold text-slate-500" data-i18n="stats.automation">أتمتة لا محدودة</div>
+            <div class="mt-0.5 text-[10px] text-slate-400">Web · Business · Print</div>
+        </div>
+    </section>
+    <!-- stats end -->
 
+    <!-- skills -->
+    <section id="skills" class="mt-5 p-6 sm:p-8 lg:p-10 bg-white border border-slate-200 rounded-[28px] shadow-[0_8px_30px_-18px_rgba(15,23,42,0.15)]">
 
-                <!-- Web -->
-                <div class="skill-item" data-category="web">
-                    <i class="fa-brands fa-html5"></i>
-                    <strong>HTML5</strong>
-                    <span>Web Structure</span>
+        <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4 mb-8">
+            <div>
+                <span class="text-[10px] font-black tracking-[0.22em] uppercase text-code">01 · <span data-i18n="skills.label">المهارات والتقنيات</span></span>
+                <h2 class="mt-2 text-2xl sm:text-3xl font-black text-navy tracking-tight" data-i18n="skills.title">ثلاثة مجالات أساسية. وطبقة تقنية داعمة.</h2>
+                <p class="mt-2 text-[13px] text-slate-500 leading-relaxed max-w-2xl" data-i18n="skills.subtitle">
+                    كل ركيزة تمثل عالماً قائماً بذاته، لكن قوتها الحقيقية تظهر عندما تعمل معاً في مشروع واحد.
+                </p>
+            </div>
+        </div>
+
+        <!-- skills software -->
+        <div class="mb-5">
+            <div class="flex items-center gap-3 mb-4">
+                <div class="w-10 h-10 grid place-items-center rounded-xl bg-code text-white text-base shadow-lg shadow-code/30">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+                <div>
+                    <h3 class="text-[15px] font-black text-navy" data-i18n="pillar.software.title">هندسة البرمجيات وتطوير الويب</h3>
+                    <p class="text-[11px] text-slate-400" data-i18n="pillar.software.sub">Software Engineering & Full-Stack Web Development</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                <div class="skill-item-card group relative p-4 bg-gradient-to-br from-indigo-50 to-white border border-indigo-100 rounded-2xl hover:border-code hover:shadow-lg hover:shadow-code/10 hover:-translate-y-1 transition duration-300" data-category="software">
+                    <div class="flex items-start gap-3">
+                        <div class="w-9 h-9 shrink-0 grid place-items-center rounded-lg bg-white border border-indigo-100 text-code text-base group-hover:bg-code group-hover:text-white transition"><i class="fa-brands fa-python"></i></div>
+                        <div class="min-w-0">
+                            <div class="text-[12px] font-black text-navy">Django & Python</div>
+                            <div class="text-[10px] text-slate-500 mt-0.5 leading-relaxed" data-i18n="skill.django">تطوير الخوادم والأنظمة الخلفية</div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="skill-item" data-category="web">
-                    <i class="fa-brands fa-css3-alt"></i>
-                    <strong>CSS3</strong>
-                    <span>UI Styling</span>
+                <div class="skill-item-card group relative p-4 bg-gradient-to-br from-indigo-50 to-white border border-indigo-100 rounded-2xl hover:border-code hover:shadow-lg hover:shadow-code/10 hover:-translate-y-1 transition duration-300" data-category="software">
+                    <div class="flex items-start gap-3">
+                        <div class="w-9 h-9 shrink-0 grid place-items-center rounded-lg bg-white border border-indigo-100 text-code text-base group-hover:bg-code group-hover:text-white transition"><i class="fa-brands fa-js"></i></div>
+                        <div class="min-w-0">
+                            <div class="text-[12px] font-black text-navy">JavaScript (ES6+)</div>
+                            <div class="text-[10px] text-slate-500 mt-0.5 leading-relaxed" data-i18n="skill.js">تفاعلية الواجهات الأمامية</div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="skill-item" data-category="web">
-                    <i class="fa-brands fa-js"></i>
-                    <strong>JavaScript</strong>
-                    <span>Interactive Web</span>
+                <div class="skill-item-card group relative p-4 bg-gradient-to-br from-indigo-50 to-white border border-indigo-100 rounded-2xl hover:border-code hover:shadow-lg hover:shadow-code/10 hover:-translate-y-1 transition duration-300" data-category="software">
+                    <div class="flex items-start gap-3">
+                        <div class="w-9 h-9 shrink-0 grid place-items-center rounded-lg bg-white border border-indigo-100 text-code text-base group-hover:bg-code group-hover:text-white transition"><i class="fa-solid fa-wind"></i></div>
+                        <div class="min-w-0">
+                            <div class="text-[12px] font-black text-navy">Tailwind & Bootstrap</div>
+                            <div class="text-[10px] text-slate-500 mt-0.5 leading-relaxed" data-i18n="skill.css">تنسيق الواجهات الحديثة</div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="skill-item" data-category="web">
-                    <i class="fa-solid fa-wind"></i>
-                    <strong>Tailwind CSS</strong>
-                    <span>Modern UI</span>
+                <div class="skill-item-card group relative p-4 bg-gradient-to-br from-indigo-50 to-white border border-indigo-100 rounded-2xl hover:border-code hover:shadow-lg hover:shadow-code/10 hover:-translate-y-1 transition duration-300" data-category="software">
+                    <div class="flex items-start gap-3">
+                        <div class="w-9 h-9 shrink-0 grid place-items-center rounded-lg bg-white border border-indigo-100 text-code text-base group-hover:bg-code group-hover:text-white transition"><i class="fa-solid fa-database"></i></div>
+                        <div class="min-w-0">
+                            <div class="text-[12px] font-black text-navy">PostgreSQL / MySQL</div>
+                            <div class="text-[10px] text-slate-500 mt-0.5 leading-relaxed" data-i18n="skill.db">إدارة قواعد البيانات العلائقية</div>
+                        </div>
+                    </div>
                 </div>
 
-
-                <!-- Backend -->
-                <div class="skill-item featured-skill" data-category="backend">
-                    <i class="fa-brands fa-python"></i>
-                    <strong>Django</strong>
-                    <span>Web Framework</span>
+                <div class="skill-item-card group relative p-4 bg-gradient-to-br from-indigo-50 to-white border border-indigo-100 rounded-2xl hover:border-code hover:shadow-lg hover:shadow-code/10 hover:-translate-y-1 transition duration-300" data-category="software">
+                    <div class="flex items-start gap-3">
+                        <div class="w-9 h-9 shrink-0 grid place-items-center rounded-lg bg-white border border-indigo-100 text-code text-base group-hover:bg-code group-hover:text-white transition"><i class="fa-solid fa-plug"></i></div>
+                        <div class="min-w-0">
+                            <div class="text-[12px] font-black text-navy">REST APIs & ORM</div>
+                            <div class="text-[10px] text-slate-500 mt-0.5 leading-relaxed" data-i18n="skill.api">ربط الخدمات وطبقة البيانات</div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="skill-item featured-skill" data-category="backend">
-                    <i class="fa-brands fa-python"></i>
-                    <strong>Python</strong>
-                    <span>Programming</span>
+                <div class="skill-item-card group relative p-4 bg-gradient-to-br from-indigo-50 to-white border border-indigo-100 rounded-2xl hover:border-code hover:shadow-lg hover:shadow-code/10 hover:-translate-y-1 transition duration-300" data-category="software">
+                    <div class="flex items-start gap-3">
+                        <div class="w-9 h-9 shrink-0 grid place-items-center rounded-lg bg-white border border-indigo-100 text-code text-base group-hover:bg-code group-hover:text-white transition"><i class="fa-brands fa-git-alt"></i></div>
+                        <div class="min-w-0">
+                            <div class="text-[12px] font-black text-navy">Git & GitHub</div>
+                            <div class="text-[10px] text-slate-500 mt-0.5 leading-relaxed" data-i18n="skill.git">إدارة النسخ والمشاريع</div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="skill-item" data-category="backend">
-                    <i class="fa-solid fa-plug"></i>
-                    <strong>REST APIs</strong>
-                    <span>Backend Services</span>
+                <div class="skill-item-card group relative p-4 bg-gradient-to-br from-indigo-50 to-white border border-indigo-100 rounded-2xl hover:border-code hover:shadow-lg hover:shadow-code/10 hover:-translate-y-1 transition duration-300" data-category="software">
+                    <div class="flex items-start gap-3">
+                        <div class="w-9 h-9 shrink-0 grid place-items-center rounded-lg bg-white border border-indigo-100 text-code text-base group-hover:bg-code group-hover:text-white transition"><i class="fa-brands fa-react"></i></div>
+                        <div class="min-w-0">
+                            <div class="text-[12px] font-black text-navy">React.js</div>
+                            <div class="text-[10px] text-slate-500 mt-0.5 leading-relaxed" data-i18n="skill.react">بناء واجهات تفاعلية بالمكونات</div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="skill-item" data-category="backend">
-                    <i class="fa-solid fa-layer-group"></i>
-                    <strong>Django ORM</strong>
-                    <span>Data Layer</span>
+                <div class="skill-item-card group relative p-4 bg-gradient-to-br from-indigo-50 to-white border border-indigo-100 rounded-2xl hover:border-code hover:shadow-lg hover:shadow-code/10 hover:-translate-y-1 transition duration-300" data-category="software">
+                    <div class="flex items-start gap-3">
+                        <div class="w-9 h-9 shrink-0 grid place-items-center rounded-lg bg-white border border-indigo-100 text-code text-base group-hover:bg-code group-hover:text-white transition"><i class="fa-solid fa-diagram-project"></i></div>
+                        <div class="min-w-0">
+                            <div class="text-[12px] font-black text-navy" data-i18n="skill.algorithms.title">الخوارزميات وهياكل البيانات</div>
+                            <div class="text-[10px] text-slate-500 mt-0.5 leading-relaxed" data-i18n="skill.algorithms">حل المشكلات وتنظيم البيانات بكفاءة</div>
+                        </div>
+                    </div>
                 </div>
 
-
-                <!-- Database -->
-                <div class="skill-item featured-skill" data-category="database">
-                    <i class="fa-solid fa-database"></i>
-                    <strong>PostgreSQL</strong>
-                    <span>Database</span>
+                <div class="skill-item-card group relative p-4 bg-gradient-to-br from-indigo-50 to-white border border-indigo-100 rounded-2xl hover:border-code hover:shadow-lg hover:shadow-code/10 hover:-translate-y-1 transition duration-300" data-category="software">
+                    <div class="flex items-start gap-3">
+                        <div class="w-9 h-9 shrink-0 grid place-items-center rounded-lg bg-white border border-indigo-100 text-code text-base group-hover:bg-code group-hover:text-white transition"><i class="fa-brands fa-linux"></i></div>
+                        <div class="min-w-0">
+                            <div class="text-[12px] font-black text-navy" data-i18n="skill.linux.title">Linux & Server Operations</div>
+                            <div class="text-[10px] text-slate-500 mt-0.5 leading-relaxed" data-i18n="skill.linux">التعامل مع بيئات Linux والخوادم</div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="skill-item" data-category="database">
-                    <i class="fa-solid fa-database"></i>
-                    <strong>MySQL</strong>
-                    <span>Database</span>
+                <div class="skill-item-card group relative p-4 bg-gradient-to-br from-indigo-50 to-white border border-indigo-100 rounded-2xl hover:border-code hover:shadow-lg hover:shadow-code/10 hover:-translate-y-1 transition duration-300" data-category="software">
+                    <div class="flex items-start gap-3">
+                        <div class="w-9 h-9 shrink-0 grid place-items-center rounded-lg bg-white border border-indigo-100 text-code text-base group-hover:bg-code group-hover:text-white transition"><i class="fa-solid fa-server"></i></div>
+                        <div class="min-w-0">
+                            <div class="text-[12px] font-black text-navy" data-i18n="skill.deploy.title">Deployment, Hosting & Servers</div>
+                            <div class="text-[10px] text-slate-500 mt-0.5 leading-relaxed" data-i18n="skill.deploy">نشر المواقع والتعامل مع الاستضافة والخوادم</div>
+                        </div>
+                    </div>
                 </div>
 
-
-                <!-- Deployment -->
-                <div class="skill-item" data-category="deployment">
-                    <i class="fa-brands fa-github"></i>
-                    <strong>Git & GitHub</strong>
-                    <span>Version Control</span>
+                <div class="skill-item-card group relative p-4 bg-gradient-to-br from-indigo-50 to-white border border-indigo-100 rounded-2xl hover:border-code hover:shadow-lg hover:shadow-code/10 hover:-translate-y-1 transition duration-300" data-category="software">
+                    <div class="flex items-start gap-3">
+                        <div class="w-9 h-9 shrink-0 grid place-items-center rounded-lg bg-white border border-indigo-100 text-code text-base group-hover:bg-code group-hover:text-white transition"><i class="fa-solid fa-shield-halved"></i></div>
+                        <div class="min-w-0">
+                            <div class="text-[12px] font-black text-navy" data-i18n="skill.security.title">Security & Web Protection</div>
+                            <div class="text-[10px] text-slate-500 mt-0.5 leading-relaxed" data-i18n="skill.security">أساسيات حماية التطبيقات والبيانات</div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="skill-item" data-category="deployment">
-                    <i class="fa-solid fa-cloud"></i>
-                    <strong>Deployment</strong>
-                    <span>Web Deployment</span>
+                <div class="skill-item-card group relative p-4 bg-gradient-to-br from-indigo-50 to-white border border-indigo-100 rounded-2xl hover:border-code hover:shadow-lg hover:shadow-code/10 hover:-translate-y-1 transition duration-300" data-category="software">
+                    <div class="flex items-start gap-3">
+                        <div class="w-9 h-9 shrink-0 grid place-items-center rounded-lg bg-white border border-indigo-100 text-code text-base group-hover:bg-code group-hover:text-white transition"><i class="fa-solid fa-gauge-high"></i></div>
+                        <div class="min-w-0">
+                            <div class="text-[12px] font-black text-navy" data-i18n="skill.performance.title">Performance & Optimization</div>
+                            <div class="text-[10px] text-slate-500 mt-0.5 leading-relaxed" data-i18n="skill.performance">تحسين سرعة المواقع وكفاءة الأنظمة</div>
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </div>
+        <!-- skills software end -->
 
-                <div class="skill-item" data-category="deployment">
-                    <i class="fa-solid fa-server"></i>
-                    <strong>Server Basics</strong>
-                    <span>Web Hosting</span>
-                </div>
-
-
-                <!-- Design -->
-                <div class="skill-item design-skill" data-category="design">
+        <!-- skills design -->
+        <div class="mb-5">
+            <div class="flex items-center gap-3 mb-4">
+                <div class="w-10 h-10 grid place-items-center rounded-xl bg-design text-white text-base shadow-lg shadow-design/30">
                     <i class="fa-solid fa-palette"></i>
-                    <strong>Graphic Design</strong>
-                    <span>Visual Design</span>
+                </div>
+                <div>
+                    <h3 class="text-[15px] font-black text-navy" data-i18n="pillar.design.title">التصميم الإبداعي والهوية البصرية</h3>
+                    <p class="text-[11px] text-slate-400" data-i18n="pillar.design.sub">Creative Design & Visual Identity</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                <div class="skill-item-card group relative p-4 bg-gradient-to-br from-pink-50 to-white border border-pink-100 rounded-2xl hover:border-design hover:shadow-lg hover:shadow-design/10 hover:-translate-y-1 transition duration-300" data-category="design">
+                    <div class="flex items-start gap-3">
+                        <div class="w-9 h-9 shrink-0 grid place-items-center rounded-lg bg-white border border-pink-100 text-design text-base group-hover:bg-design group-hover:text-white transition"><i class="fa-solid fa-pen-nib"></i></div>
+                        <div class="min-w-0">
+                            <div class="text-[12px] font-black text-navy">Adobe Illustrator</div>
+                            <div class="text-[10px] text-slate-500 mt-0.5 leading-relaxed" data-i18n="skill.illustrator">الرسومات المتجهة والشعارات</div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="skill-item design-skill" data-category="design">
-                    <i class="fa-solid fa-pen-nib"></i>
-                    <strong>Illustrator</strong>
-                    <span>Vector Design</span>
+                <div class="skill-item-card group relative p-4 bg-gradient-to-br from-pink-50 to-white border border-pink-100 rounded-2xl hover:border-design hover:shadow-lg hover:shadow-design/10 hover:-translate-y-1 transition duration-300" data-category="design">
+                    <div class="flex items-start gap-3">
+                        <div class="w-9 h-9 shrink-0 grid place-items-center rounded-lg bg-white border border-pink-100 text-design text-base group-hover:bg-design group-hover:text-white transition"><i class="fa-solid fa-image"></i></div>
+                        <div class="min-w-0">
+                            <div class="text-[12px] font-black text-navy">Adobe Photoshop</div>
+                            <div class="text-[10px] text-slate-500 mt-0.5 leading-relaxed" data-i18n="skill.photoshop">معالجة الصور والتصاميم الإعلانية</div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="skill-item design-skill" data-category="design">
-                    <i class="fa-solid fa-image"></i>
-                    <strong>Photoshop</strong>
-                    <span>Image Editing</span>
+                <div class="skill-item-card group relative p-4 bg-gradient-to-br from-pink-50 to-white border border-pink-100 rounded-2xl hover:border-design hover:shadow-lg hover:shadow-design/10 hover:-translate-y-1 transition duration-300" data-category="design">
+                    <div class="flex items-start gap-3">
+                        <div class="w-9 h-9 shrink-0 grid place-items-center rounded-lg bg-white border border-pink-100 text-design text-base group-hover:bg-design group-hover:text-white transition"><i class="fa-solid fa-book-open"></i></div>
+                        <div class="min-w-0">
+                            <div class="text-[12px] font-black text-navy">Adobe InDesign</div>
+                            <div class="text-[10px] text-slate-500 mt-0.5 leading-relaxed" data-i18n="skill.indesign">التنسيق المكتبي والمطبوعات المتعددة</div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="skill-item design-skill" data-category="design">
-                    <i class="fa-solid fa-book-open"></i>
-                    <strong>InDesign</strong>
-                    <span>Print Design</span>
+                <div class="skill-item-card group relative p-4 bg-gradient-to-br from-pink-50 to-white border border-pink-100 rounded-2xl hover:border-design hover:shadow-lg hover:shadow-design/10 hover:-translate-y-1 transition duration-300" data-category="design">
+                    <div class="flex items-start gap-3">
+                        <div class="w-9 h-9 shrink-0 grid place-items-center rounded-lg bg-white border border-pink-100 text-design text-base group-hover:bg-design group-hover:text-white transition"><i class="fa-brands fa-figma"></i></div>
+                        <div class="min-w-0">
+                            <div class="text-[12px] font-black text-navy">Figma / Canva</div>
+                            <div class="text-[10px] text-slate-500 mt-0.5 leading-relaxed" data-i18n="skill.figma">تصميم الواجهات والسوشيال ميديا</div>
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </div>
+        <!-- skills design end -->
 
-                <div class="skill-item design-skill" data-category="design">
+        <!-- skills print -->
+        <div class="mb-5">
+            <div class="flex items-center gap-3 mb-4">
+                <div class="w-10 h-10 grid place-items-center rounded-xl bg-print text-white text-base shadow-lg shadow-print/30">
                     <i class="fa-solid fa-print"></i>
-                    <strong>Print Production</strong>
-                    <span>Printing</span>
                 </div>
-
-                <div class="skill-item design-skill" data-category="design">
-                    <i class="fa-solid fa-font"></i>
-                    <strong>Typography</strong>
-                    <span>Visual Communication</span>
-                </div>
-
-                <div class="skill-item design-skill" data-category="design">
-                    <i class="fa-solid fa-file-image"></i>
-                    <strong>Kodak Preps</strong>
-                    <span>Prepress</span>
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- Web Development -->
-        <section class="glass-card rounded-[45px] p-8 lg:p-10 mb-6">
-
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
-
                 <div>
-
-                    <span class="section-label">
-                        WEB DEVELOPMENT
-                    </span>
-
-                    <h2 class="text-3xl font-bold mt-3 mb-5">
-                        Django Web Development
-                    </h2>
-
-                    <p class="text-gray-400 text-sm leading-7">
-                        I build complete web applications using Django and Python,
-                        with PostgreSQL or MySQL for data management and modern
-                        HTML, CSS, JavaScript and Tailwind CSS for the interface.
-                    </p>
-
-                    <div class="mt-7 space-y-3">
-
-                        <div class="feature-line">
-                            <i class="fa-solid fa-check"></i>
-                            Django applications
-                        </div>
-
-                        <div class="feature-line">
-                            <i class="fa-solid fa-check"></i>
-                            Database-driven websites
-                        </div>
-
-                        <div class="feature-line">
-                            <i class="fa-solid fa-check"></i>
-                            User accounts and dashboards
-                        </div>
-
-                        <div class="feature-line">
-                            <i class="fa-solid fa-check"></i>
-                            Session and AJAX interactions
-                        </div>
-
-                        <div class="feature-line">
-                            <i class="fa-solid fa-check"></i>
-                            REST API integration
-                        </div>
-
-                    </div>
-
+                    <h3 class="text-[15px] font-black text-navy" data-i18n="pillar.print.title">الإنتاج الطباعي وما قبل الطباعة</h3>
+                    <p class="text-[11px] text-slate-400" data-i18n="pillar.print.sub">Print Production & Prepress Engineering</p>
                 </div>
-
-
-                <div class="technology-panel">
-
-                    <div class="tech-icon">
-                        <i class="fa-brands fa-python"></i>
-                    </div>
-
-                    <div>
-                        <span class="text-xs text-gray-500 uppercase tracking-widest">
-                            Main Stack
-                        </span>
-
-                        <h3 class="text-xl font-bold mt-2">
-                            Python + Django + PostgreSQL
-                        </h3>
-
-                        <p class="text-gray-500 text-sm mt-2">
-                            Backend development
-                        </p>
-                    </div>
-
-                </div>
-
             </div>
 
-        </section>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                <div class="skill-item-card group relative p-4 bg-gradient-to-br from-amber-50 to-white border border-amber-100 rounded-2xl hover:border-print hover:shadow-lg hover:shadow-print/10 hover:-translate-y-1 transition duration-300" data-category="print">
+                    <div class="flex items-start gap-3">
+                        <div class="w-9 h-9 shrink-0 grid place-items-center rounded-lg bg-white border border-amber-100 text-print text-base group-hover:bg-print group-hover:text-white transition"><i class="fa-solid fa-gears"></i></div>
+                        <div class="min-w-0">
+                            <div class="text-[11px] font-black text-navy">Heidelberg Prinect / Signa</div>
+                            <div class="text-[10px] text-slate-500 mt-0.5 leading-relaxed" data-i18n="skill.heidelberg">المونتاج والتحضير الطباعي</div>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="skill-item-card group relative p-4 bg-gradient-to-br from-amber-50 to-white border border-amber-100 rounded-2xl hover:border-print hover:shadow-lg hover:shadow-print/10 hover:-translate-y-1 transition duration-300" data-category="print">
+                    <div class="flex items-start gap-3">
+                        <div class="w-9 h-9 shrink-0 grid place-items-center rounded-lg bg-white border border-amber-100 text-print text-base group-hover:bg-print group-hover:text-white transition"><i class="fa-solid fa-layer-group"></i></div>
+                        <div class="min-w-0">
+                            <div class="text-[11px] font-black text-navy">Kodak Preps / Agfa Apogee</div>
+                            <div class="text-[10px] text-slate-500 mt-0.5 leading-relaxed" data-i18n="skill.kodak">تخطيط الصفحات وتجميع الملصقات</div>
+                        </div>
+                    </div>
+                </div>
 
-        <!-- Projects -->
-        <section class="glass-card rounded-[45px] p-8 lg:p-10 mb-6">
+                <div class="skill-item-card group relative p-4 bg-gradient-to-br from-amber-50 to-white border border-amber-100 rounded-2xl hover:border-print hover:shadow-lg hover:shadow-print/10 hover:-translate-y-1 transition duration-300" data-category="print">
+                    <div class="flex items-start gap-3">
+                        <div class="w-9 h-9 shrink-0 grid place-items-center rounded-lg bg-white border border-amber-100 text-print text-base group-hover:bg-print group-hover:text-white transition"><i class="fa-solid fa-hard-drive"></i></div>
+                        <div class="min-w-0">
+                            <div class="text-[11px] font-black text-navy">CTP Plate Imposition</div>
+                            <div class="text-[10px] text-slate-500 mt-0.5 leading-relaxed" data-i18n="skill.ctp">تجهيز وإخراج الصفائح الطباعية</div>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="flex justify-between items-end mb-8">
+                <div class="skill-item-card group relative p-4 bg-gradient-to-br from-amber-50 to-white border border-amber-100 rounded-2xl hover:border-print hover:shadow-lg hover:shadow-print/10 hover:-translate-y-1 transition duration-300" data-category="print">
+                    <div class="flex items-start gap-3">
+                        <div class="w-9 h-9 shrink-0 grid place-items-center rounded-lg bg-white border border-amber-100 text-print text-base group-hover:bg-print group-hover:text-white transition"><i class="fa-solid fa-box"></i></div>
+                        <div class="min-w-0">
+                            <div class="text-[11px] font-black text-navy">Packaging Dies (CFF2 / CAD)</div>
+                            <div class="text-[10px] text-slate-500 mt-0.5 leading-relaxed" data-i18n="skill.dies">سكاكين القص والتغليف</div>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="skill-item-card group relative p-4 bg-gradient-to-br from-amber-50 to-white border border-amber-100 rounded-2xl hover:border-print hover:shadow-lg hover:shadow-print/10 hover:-translate-y-1 transition duration-300" data-category="print">
+                    <div class="flex items-start gap-3">
+                        <div class="w-9 h-9 shrink-0 grid place-items-center rounded-lg bg-white border border-amber-100 text-print text-base group-hover:bg-print group-hover:text-white transition"><i class="fa-solid fa-industry"></i></div>
+                        <div class="min-w-0">
+                            <div class="text-[11px] font-black text-navy">Offset Printing Systems</div>
+                            <div class="text-[10px] text-slate-500 mt-0.5 leading-relaxed" data-i18n="skill.offset">تشغيل ومتابعة آلات الأوفست</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-item-card group relative p-4 bg-gradient-to-br from-amber-50 to-white border border-amber-100 rounded-2xl hover:border-print hover:shadow-lg hover:shadow-print/10 hover:-translate-y-1 transition duration-300" data-category="print">
+                    <div class="flex items-start gap-3">
+                        <div class="w-9 h-9 shrink-0 grid place-items-center rounded-lg bg-white border border-amber-100 text-print text-base group-hover:bg-print group-hover:text-white transition"><i class="fa-solid fa-scissors"></i></div>
+                        <div class="min-w-0">
+                            <div class="text-[11px] font-black text-navy">Die-Cutting & Packaging</div>
+                            <div class="text-[10px] text-slate-500 mt-0.5 leading-relaxed" data-i18n="skill.diecut">تقنيات التشكيل وقص العلب</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-item-card group relative p-4 bg-gradient-to-br from-amber-50 to-white border border-amber-100 rounded-2xl hover:border-print hover:shadow-lg hover:shadow-print/10 hover:-translate-y-1 transition duration-300" data-category="print">
+                    <div class="flex items-start gap-3">
+                        <div class="w-9 h-9 shrink-0 grid place-items-center rounded-lg bg-white border border-amber-100 text-print text-base group-hover:bg-print group-hover:text-white transition"><i class="fa-solid fa-droplet"></i></div>
+                        <div class="min-w-0">
+                            <div class="text-[11px] font-black text-navy">Color Management & Density</div>
+                            <div class="text-[10px] text-slate-500 mt-0.5 leading-relaxed" data-i18n="skill.color">ضبط الكثافة ومطابقة الألوان</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-item-card group relative p-4 bg-gradient-to-br from-amber-50 to-white border border-amber-100 rounded-2xl hover:border-print hover:shadow-lg hover:shadow-print/10 hover:-translate-y-1 transition duration-300" data-category="print">
+                    <div class="flex items-start gap-3">
+                        <div class="w-9 h-9 shrink-0 grid place-items-center rounded-lg bg-white border border-amber-100 text-print text-base group-hover:bg-print group-hover:text-white transition"><i class="fa-solid fa-star"></i></div>
+                        <div class="min-w-0">
+                            <div class="text-[11px] font-black text-navy">Post-Press Finishing</div>
+                            <div class="text-[10px] text-slate-500 mt-0.5 leading-relaxed" data-i18n="skill.finishing">السلفنة، البصمة، والإنهاء الفني</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- skills print end -->
+
+        <!-- skills ai -->
+        <div>
+            <div class="flex items-center gap-3 mb-4">
+                <div class="w-10 h-10 grid place-items-center rounded-xl bg-ai text-white text-base shadow-lg shadow-ai/30">
+                    <i class="fa-solid fa-brain"></i>
+                </div>
                 <div>
-
-                    <span class="section-label">
-                        PROJECTS
-                    </span>
-
-                    <h2 class="text-3xl font-bold mt-2">
-                        Selected Projects
-                    </h2>
-
+                    <h3 class="text-[15px] font-black text-navy" data-i18n="pillar.ai.title">هندسة الذكاء الاصطناعي والأتمتة</h3>
+                    <p class="text-[11px] text-slate-400" data-i18n="pillar.ai.sub">AI Engineering, Agents & Workflow Automation</p>
                 </div>
-
-                <a href="https://github.com/mouazbrai"
-                    target="_blank"
-                    class="text-xs text-cyan-400 hover:text-white transition">
-                    View GitHub →
-                </a>
-
             </div>
 
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                <div class="skill-item-card group relative p-4 bg-gradient-to-br from-emerald-50 to-white border border-emerald-100 rounded-2xl hover:border-ai hover:shadow-lg hover:shadow-ai/10 hover:-translate-y-1 transition duration-300" data-category="ai">
+                    <div class="flex items-start gap-3">
+                        <div class="w-9 h-9 shrink-0 grid place-items-center rounded-lg bg-white border border-emerald-100 text-ai text-base group-hover:bg-ai group-hover:text-white transition"><i class="fa-solid fa-robot"></i></div>
+                        <div class="min-w-0">
+                            <div class="text-[12px] font-black text-navy">AI Agents Management</div>
+                            <div class="text-[10px] text-slate-500 mt-0.5 leading-relaxed" data-i18n="skill.agents">بناء وإدارة وكلاء الذكاء الاصطناعي</div>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+                <div class="skill-item-card group relative p-4 bg-gradient-to-br from-emerald-50 to-white border border-emerald-100 rounded-2xl hover:border-ai hover:shadow-lg hover:shadow-ai/10 hover:-translate-y-1 transition duration-300" data-category="ai">
+                    <div class="flex items-start gap-3">
+                        <div class="w-9 h-9 shrink-0 grid place-items-center rounded-lg bg-white border border-emerald-100 text-ai text-base group-hover:bg-ai group-hover:text-white transition"><i class="fa-solid fa-comment-dots"></i></div>
+                        <div class="min-w-0">
+                            <div class="text-[12px] font-black text-navy">Prompt Engineering</div>
+                            <div class="text-[10px] text-slate-500 mt-0.5 leading-relaxed" data-i18n="skill.prompt">هندسة الأوامر والتحكم بالنماذج</div>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="skill-item-card group relative p-4 bg-gradient-to-br from-emerald-50 to-white border border-emerald-100 rounded-2xl hover:border-ai hover:shadow-lg hover:shadow-ai/10 hover:-translate-y-1 transition duration-300" data-category="ai">
+                    <div class="flex items-start gap-3">
+                        <div class="w-9 h-9 shrink-0 grid place-items-center rounded-lg bg-white border border-emerald-100 text-ai text-base group-hover:bg-ai group-hover:text-white transition"><i class="fa-solid fa-diagram-project"></i></div>
+                        <div class="min-w-0">
+                            <div class="text-[12px] font-black text-navy">Context Engineering</div>
+                            <div class="text-[10px] text-slate-500 mt-0.5 leading-relaxed" data-i18n="skill.context">هندسة السياق وبناء الأنظمة</div>
+                        </div>
+                    </div>
+                </div>
 
-                <a href="https://mouazbrai.github.io/Company-Website/"
-                    target="_blank"
-                    class="project-card">
+                <div class="skill-item-card group relative p-4 bg-gradient-to-br from-emerald-50 to-white border border-emerald-100 rounded-2xl hover:border-ai hover:shadow-lg hover:shadow-ai/10 hover:-translate-y-1 transition duration-300" data-category="ai">
+                    <div class="flex items-start gap-3">
+                        <div class="w-9 h-9 shrink-0 grid place-items-center rounded-lg bg-white border border-emerald-100 text-ai text-base group-hover:bg-ai group-hover:text-white transition"><i class="fa-solid fa-gears"></i></div>
+                        <div class="min-w-0">
+                            <div class="text-[12px] font-black text-navy">Workflow Automation</div>
+                            <div class="text-[10px] text-slate-500 mt-0.5 leading-relaxed" data-i18n="skill.workflow">أتمتة مهام الإنتاج والطباعة</div>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="skill-item-card group relative p-4 bg-gradient-to-br from-emerald-50 to-white border border-emerald-100 rounded-2xl hover:border-ai hover:shadow-lg hover:shadow-ai/10 hover:-translate-y-1 transition duration-300" data-category="ai">
+                    <div class="flex items-start gap-3">
+                        <div class="w-9 h-9 shrink-0 grid place-items-center rounded-lg bg-white border border-emerald-100 text-ai text-base group-hover:bg-ai group-hover:text-white transition"><i class="fa-solid fa-terminal"></i></div>
+                        <div class="min-w-0">
+                            <div class="text-[12px] font-black text-navy">Python Scripting</div>
+                            <div class="text-[10px] text-slate-500 mt-0.5 leading-relaxed" data-i18n="skill.scripting">أدوات أتمتة مخصصة (ترقيم، ضغط ملفات)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-item-card group relative p-4 bg-gradient-to-br from-emerald-50 to-white border border-emerald-100 rounded-2xl hover:border-ai hover:shadow-lg hover:shadow-ai/10 hover:-translate-y-1 transition duration-300" data-category="ai">
+                    <div class="flex items-start gap-3">
+                        <div class="w-9 h-9 shrink-0 grid place-items-center rounded-lg bg-white border border-emerald-100 text-ai text-base group-hover:bg-ai group-hover:text-white transition"><i class="fa-solid fa-cart-shopping"></i></div>
+                        <div class="min-w-0">
+                            <div class="text-[12px] font-black text-navy">E-commerce Solutions</div>
+                            <div class="text-[10px] text-slate-500 mt-0.5 leading-relaxed" data-i18n="skill.ecommerce">منصات الطلب الإلكتروني للمطابع</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- skills ai end -->
+    </section>
+    <!-- skills end -->
+
+    <!-- services -->
+    <section id="services" class="mt-5 p-6 sm:p-8 lg:p-10 bg-white border border-slate-200 rounded-[28px] shadow-[0_8px_30px_-18px_rgba(15,23,42,0.15)]">
+        <div class="mb-8">
+            <span class="text-[10px] font-black tracking-[0.22em] uppercase text-design">02 · <span data-i18n="services.label">الخدمات</span></span>
+            <h2 class="mt-2 text-2xl sm:text-3xl font-black text-navy tracking-tight" data-i18n="services.title">حلول أبنيها للشركات.</h2>
+            <p class="mt-2 text-[13px] text-slate-500 leading-relaxed max-w-2xl" data-i18n="services.subtitle">
+                حلول متكاملة تجمع بين هندسة البرمجيات، التصميم، والأتمتة — مصممة خصيصاً لقطاع الطباعة والأعمال الرقمية.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+
+            <div class="card-shine group p-5 bg-gradient-to-br from-indigo-50 to-white border border-indigo-100 rounded-2xl hover:shadow-xl hover:shadow-code/10 hover:-translate-y-1 transition duration-300">
+                <div class="w-11 h-11 grid place-items-center rounded-xl bg-code text-white text-lg shadow-md shadow-code/30 mb-4 group-hover:scale-110 transition">
+                    <i class="fa-solid fa-laptop-code"></i>
+                </div>
+                <h3 class="text-[14px] font-black text-navy" data-i18n="service.1.title">تطوير تطبيقات الويب</h3>
+                <p class="mt-2 text-[11px] text-slate-500 leading-relaxed" data-i18n="service.1.desc">
+                    تطبيقات Django كاملة مع لوحات تحكم، مصادقة مستخدمين، وقواعد بيانات احترافية.
+                </p>
+            </div>
+
+            <div class="card-shine group p-5 bg-gradient-to-br from-amber-50 to-white border border-amber-100 rounded-2xl hover:shadow-xl hover:shadow-print/10 hover:-translate-y-1 transition duration-300">
+                <div class="w-11 h-11 grid place-items-center rounded-xl bg-print text-white text-lg shadow-md shadow-print/30 mb-4 group-hover:scale-110 transition">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <h3 class="text-[14px] font-black text-navy" data-i18n="service.2.title">منصة طلب إلكتروني للمطابع</h3>
+                <p class="mt-2 text-[11px] text-slate-500 leading-relaxed" data-i18n="service.2.desc">
+                    متجر إلكتروني متكامل لاستقبال طلبات الطباعة، مع رفع الملفات، حساب الأسعار، وتتبع الطلبات.
+                </p>
+            </div>
+
+            <div class="card-shine group p-5 bg-gradient-to-br from-emerald-50 to-white border border-emerald-100 rounded-2xl hover:shadow-xl hover:shadow-ai/10 hover:-translate-y-1 transition duration-300">
+                <div class="w-11 h-11 grid place-items-center rounded-xl bg-ai text-white text-lg shadow-md shadow-ai/30 mb-4 group-hover:scale-110 transition">
+                    <i class="fa-solid fa-robot"></i>
+                </div>
+                <h3 class="text-[14px] font-black text-navy" data-i18n="service.3.title">أتمتة المهام الطباعية</h3>
+                <p class="mt-2 text-[11px] text-slate-500 leading-relaxed" data-i18n="service.3.desc">
+                    برامج مخصصة: ترقيم الكوبونات، تقليص حجم ملفات الطباعة، معالجة الدفعات، وتقليل الأخطاء اليدوية.
+                </p>
+            </div>
+
+            <div class="card-shine group p-5 bg-gradient-to-br from-pink-50 to-white border border-pink-100 rounded-2xl hover:shadow-xl hover:shadow-design/10 hover:-translate-y-1 transition duration-300">
+                <div class="w-11 h-11 grid place-items-center rounded-xl bg-design text-white text-lg shadow-md shadow-design/30 mb-4 group-hover:scale-110 transition">
+                    <i class="fa-solid fa-pen-fancy"></i>
+                </div>
+                <h3 class="text-[14px] font-black text-navy" data-i18n="service.4.title">السمارت فلايرز واللاندينغ بايجس</h3>
+                <p class="mt-2 text-[11px] text-slate-500 leading-relaxed" data-i18n="service.4.desc">
+                    صفحات هبوط عالية التحويل وحملات إعلانية بصرية سريعة التنفيذ حسب الطلب.
+                </p>
+            </div>
+
+            <div class="card-shine group p-5 bg-gradient-to-br from-pink-50 to-white border border-pink-100 rounded-2xl hover:shadow-xl hover:shadow-design/10 hover:-translate-y-1 transition duration-300">
+                <div class="w-11 h-11 grid place-items-center rounded-xl bg-design text-white text-lg shadow-md shadow-design/30 mb-4 group-hover:scale-110 transition">
+                    <i class="fa-solid fa-palette"></i>
+                </div>
+                <h3 class="text-[14px] font-black text-navy" data-i18n="service.5.title">التصميم الجرافيكي والهوية</h3>
+                <p class="mt-2 text-[11px] text-slate-500 leading-relaxed" data-i18n="service.5.desc">
+                    كروت زيارة، كوبونات، إعلانات، شعارات، وهويات بصرية كاملة من الفكرة إلى المطبوع.
+                </p>
+            </div>
+
+            <div class="card-shine group p-5 bg-gradient-to-br from-emerald-50 to-white border border-emerald-100 rounded-2xl hover:shadow-xl hover:shadow-ai/10 hover:-translate-y-1 transition duration-300">
+                <div class="w-11 h-11 grid place-items-center rounded-xl bg-ai text-white text-lg shadow-md shadow-ai/30 mb-4 group-hover:scale-110 transition">
+                    <i class="fa-solid fa-brain"></i>
+                </div>
+                <h3 class="text-[14px] font-black text-navy" data-i18n="service.6.title">هندسة الذكاء الاصطناعي</h3>
+                <p class="mt-2 text-[11px] text-slate-500 leading-relaxed" data-i18n="service.6.desc">
+                    بناء وكلاء AI، هندسة البرومبت والسياق، ورفع إنتاجية الفرق عبر حلول ذكية مخصصة.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- services end -->
+
+    <!-- projects -->
+    <section id="projects" class="mt-5 p-6 sm:p-8 lg:p-10 bg-white border border-slate-200 rounded-[28px] shadow-[0_8px_30px_-18px_rgba(15,23,42,0.15)]">
+        <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-7">
+            <div>
+                <span class="text-[10px] font-black tracking-[0.22em] uppercase text-print">03 · <span data-i18n="projects.label">المشاريع</span></span>
+                <h2 class="mt-2 text-2xl sm:text-3xl font-black text-navy tracking-tight" data-i18n="projects.title">أعمال مختارة.</h2>
+                <p class="mt-2 text-[13px] text-slate-500 leading-relaxed max-w-xl" data-i18n="projects.subtitle">
+                    نماذج من مشاريع الويب التي تعكس أسلوبي في البناء والتطوير.
+                </p>
+            </div>
+            <a href="https://github.com/mouazbrai" target="_blank" rel="noopener"
+               class="text-[11px] font-extrabold text-code hover:text-code-dark transition inline-flex items-center gap-1">
+                <span data-i18n="projects.viewGithub">عرض GitHub</span> <i class="fa-solid fa-arrow-left rtl:rotate-180"></i>
+            </a>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+
+            <a href="https://mouazbrai.github.io/Company-Website/" target="_blank" rel="noopener"
+               class="card-shine group relative overflow-hidden min-h-[200px] p-5 flex flex-col justify-end bg-gradient-to-br from-indigo-50 to-white border border-indigo-100 rounded-2xl hover:border-code hover:-translate-y-1.5 hover:shadow-xl hover:shadow-code/10 transition duration-300">
+                <span class="absolute top-4 left-5 text-[10px] font-black text-code/30">01</span>
+                <div class="w-11 h-11 grid place-items-center rounded-xl bg-code text-white text-lg mb-auto shadow-md shadow-code/30 group-hover:scale-110 transition">
                     <i class="fa-solid fa-building"></i>
-
-                    <h3>Company Website</h3>
-
-                    <p>
-                        Professional Web Project
-                    </p>
-
-                </a>
-
-
-                <a href="https://mouazbrai.github.io/portfolio-websites/"
-                    target="_blank"
-                    class="project-card">
-
-                    <i class="fa-solid fa-layer-group"></i>
-
-                    <h3>Portfolio Websites</h3>
-
-                    <p>
-                        Web Design Showcase
-                    </p>
-
-                </a>
-
-
-                <a href="https://mouazbrai.github.io/cyber-website/"
-                    target="_blank"
-                    class="project-card">
-
-                    <i class="fa-solid fa-user-secret"></i>
-
-                    <h3>Cyber Website</h3>
-
-                    <p>
-                        Security Concept
-                    </p>
-
-                </a>
-
-
-                <a href="https://github.com/mouazbrai/Girls-react-project"
-                    target="_blank"
-                    class="project-card">
-
-                    <i class="fa-brands fa-react"></i>
-
-                    <h3>React Project</h3>
-
-                    <p>
-                        React Development
-                    </p>
-
-                </a>
-
-            </div>
-
-        </section>
-
-
-        <!-- Graphic Design -->
-        <section class="glass-card rounded-[45px] p-8 lg:p-10 mb-6">
-
-            <div class="flex justify-between items-end mb-8">
-
-                <div>
-
-                    <span class="section-label">
-                        GRAPHIC DESIGN
-                    </span>
-
-                    <h2 class="text-3xl font-bold mt-2">
-                        Design & Print Work
-                    </h2>
-
                 </div>
-
-                <span class="text-xs text-gray-600">
-                    Click an image
+                <h3 class="mt-4 text-[13px] font-black text-navy" data-i18n="project.1.title">Company Website</h3>
+                <p class="mt-1 text-[10px] text-slate-500" data-i18n="project.1.desc">مشروع ويب احترافي</p>
+                <span class="inline-flex items-center gap-1 mt-3 text-[10px] font-extrabold text-code">
+                    <span data-i18n="project.open">فتح المشروع</span> <i class="fa-solid fa-arrow-up-left-from-square"></i>
                 </span>
+            </a>
 
+            <a href="https://mouazbrai.github.io/portfolio-websites/" target="_blank" rel="noopener"
+               class="card-shine group relative overflow-hidden min-h-[200px] p-5 flex flex-col justify-end bg-gradient-to-br from-pink-50 to-white border border-pink-100 rounded-2xl hover:border-design hover:-translate-y-1.5 hover:shadow-xl hover:shadow-design/10 transition duration-300">
+                <span class="absolute top-4 left-5 text-[10px] font-black text-design/30">02</span>
+                <div class="w-11 h-11 grid place-items-center rounded-xl bg-design text-white text-lg mb-auto shadow-md shadow-design/30 group-hover:scale-110 transition">
+                    <i class="fa-solid fa-layer-group"></i>
+                </div>
+                <h3 class="mt-4 text-[13px] font-black text-navy" data-i18n="project.2.title">Portfolio Websites</h3>
+                <p class="mt-1 text-[10px] text-slate-500" data-i18n="project.2.desc">معرض تصميم ويب</p>
+                <span class="inline-flex items-center gap-1 mt-3 text-[10px] font-extrabold text-design">
+                    <span data-i18n="project.open">فتح المشروع</span> <i class="fa-solid fa-arrow-up-left-from-square"></i>
+                </span>
+            </a>
+
+            <a href="https://mouazbrai.github.io/cyber-website/" target="_blank" rel="noopener"
+               class="card-shine group relative overflow-hidden min-h-[200px] p-5 flex flex-col justify-end bg-gradient-to-br from-amber-50 to-white border border-amber-100 rounded-2xl hover:border-print hover:-translate-y-1.5 hover:shadow-xl hover:shadow-print/10 transition duration-300">
+                <span class="absolute top-4 left-5 text-[10px] font-black text-print/30">03</span>
+                <div class="w-11 h-11 grid place-items-center rounded-xl bg-print text-white text-lg mb-auto shadow-md shadow-print/30 group-hover:scale-110 transition">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <h3 class="mt-4 text-[13px] font-black text-navy" data-i18n="project.3.title">Cyber Website</h3>
+                <p class="mt-1 text-[10px] text-slate-500" data-i18n="project.3.desc">مفهوم أمني</p>
+                <span class="inline-flex items-center gap-1 mt-3 text-[10px] font-extrabold text-print">
+                    <span data-i18n="project.open">فتح المشروع</span> <i class="fa-solid fa-arrow-up-left-from-square"></i>
+                </span>
+            </a>
+
+            <a href="https://github.com/mouazbrai/Girls-react-project" target="_blank" rel="noopener"
+               class="card-shine group relative overflow-hidden min-h-[200px] p-5 flex flex-col justify-end bg-gradient-to-br from-emerald-50 to-white border border-emerald-100 rounded-2xl hover:border-ai hover:-translate-y-1.5 hover:shadow-xl hover:shadow-ai/10 transition duration-300">
+                <span class="absolute top-4 left-5 text-[10px] font-black text-ai/30">04</span>
+                <div class="w-11 h-11 grid place-items-center rounded-xl bg-ai text-white text-lg mb-auto shadow-md shadow-ai/30 group-hover:scale-110 transition">
+                    <i class="fa-brands fa-react"></i>
+                </div>
+                <h3 class="mt-4 text-[13px] font-black text-navy" data-i18n="project.4.title">React Project</h3>
+                <p class="mt-1 text-[10px] text-slate-500" data-i18n="project.4.desc">تطوير React</p>
+                <span class="inline-flex items-center gap-1 mt-3 text-[10px] font-extrabold text-ai">
+                    <span data-i18n="project.open">فتح المشروع</span> <i class="fa-solid fa-arrow-up-left-from-square"></i>
+                </span>
+            </a>
+
+            <a href="https://mouazbrai.github.io/cfpa-beraki/" target="_blank" rel="noopener"
+               class="card-shine group relative overflow-hidden min-h-[200px] p-5 flex flex-col justify-end bg-gradient-to-br from-slate-100 to-white border border-slate-200 rounded-2xl hover:border-code hover:-translate-y-1.5 hover:shadow-xl hover:shadow-code/10 transition duration-300">
+                <span class="absolute top-4 left-5 text-[10px] font-black text-code/30">05</span>
+                <div class="w-11 h-11 grid place-items-center rounded-xl bg-navy text-white text-lg mb-auto shadow-md shadow-navy/20 group-hover:scale-110 transition">
+                    <i class="fa-solid fa-certificate"></i>
+                </div>
+                <div class="mt-4 inline-flex w-fit px-2 py-1 text-[8px] font-black tracking-wider uppercase rounded-md bg-code/10 text-code" data-i18n="project.5.badge">Final Qualification Project</div>
+                <h3 class="mt-2 text-[13px] font-black text-navy" data-i18n="project.5.title">CFPA Youssef Zenouchi – Baraki</h3>
+                <p class="mt-1 text-[10px] text-slate-500" data-i18n="project.5.desc">مشروع نهاية التكوين · شهادة تأهيل في إنشاء مواقع الويب WEB الثابت والمتنقل · User Experience</p>
+                <span class="inline-flex items-center gap-1 mt-3 text-[10px] font-extrabold text-code">
+                    <span data-i18n="project.open">فتح المشروع</span> <i class="fa-solid fa-arrow-up-left-from-square"></i>
+                </span>
+            </a>
+        </div>
+    </section>
+    <!-- projects end -->
+
+    <!-- design -->
+    <section id="design" class="mt-5 p-6 sm:p-8 lg:p-10 bg-white border border-slate-200 rounded-[28px] shadow-[0_8px_30px_-18px_rgba(15,23,42,0.15)]">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
+            <div>
+                <span class="text-[10px] font-black tracking-[0.22em] uppercase text-ai">04 · <span data-i18n="design.label">الأعمال البصرية</span></span>
+                <h2 class="mt-2 text-2xl sm:text-3xl font-black text-navy tracking-tight" data-i18n="design.title">أعمال التصميم والطباعة.</h2>
+                <p class="mt-2 text-[13px] text-slate-500 leading-relaxed max-w-xl" data-i18n="design.subtitle">
+                    كروت زيارة، كوبونات، إعلانات، وتغليف — من الفكرة إلى المطبوع النهائي.
+                </p>
             </div>
-
-
-            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-
-                <button class="gallery-item" data-image="img0.png">
-                    <img src="img0.png" alt="Graphic Design 1">
-                </button>
-
-                <button class="gallery-item" data-image="img1.png">
-                    <img src="img1.png" alt="Graphic Design 2">
-                </button>
-
-                <button class="gallery-item" data-image="img2.png">
-                    <img src="img2.png" alt="Graphic Design 3">
-                </button>
-
-                <button class="gallery-item" data-image="img3.png">
-                    <img src="img3.png" alt="Graphic Design 4">
-                </button>
-
-                <button class="gallery-item" data-image="img4.png">
-                    <img src="img4.png" alt="Graphic Design 5">
-                </button>
-
-                <button class="gallery-item" data-image="img5.png">
-                    <img src="img5.png" alt="Graphic Design 6">
-                </button>
-
-            </div>
-
-        </section>
-
-
-        <!-- About -->
-        <section class="glass-card rounded-[45px] p-8 lg:p-10 mb-6">
-
-            <span class="section-label">
-                ABOUT ME
+            <span class="self-start sm:self-auto px-3.5 py-2.5 text-[11px] font-bold text-slate-500 bg-slate-50 border border-slate-200 rounded-lg inline-flex items-center gap-1.5">
+                <i class="fa-solid fa-arrow-pointer text-ai"></i> <span data-i18n="design.hint">اضغط صورة للمعاينة</span>
             </span>
+        </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-4">
+        <div class="grid grid-cols-2 lg:grid-cols-3 gap-2.5">
+            <button class="gallery-item group relative overflow-hidden aspect-[4/3] rounded-2xl bg-slate-100 border border-slate-200 hover:border-ai hover:-translate-y-1 hover:shadow-xl hover:shadow-ai/10 transition duration-300" data-image="img0.png">
+                <img src="img0.png" alt="Graphic Design 1" loading="lazy" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+                <span class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent opacity-0 group-hover:opacity-100 transition"></span>
+                <span class="absolute bottom-3 left-3 px-2.5 py-1.5 text-[9px] font-black tracking-wider text-white bg-ai/90 rounded-md opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition" data-i18n="design.view">عرض</span>
+            </button>
 
-                <div>
+            <button class="gallery-item group relative overflow-hidden aspect-[4/3] rounded-2xl bg-slate-100 border border-slate-200 hover:border-ai hover:-translate-y-1 hover:shadow-xl hover:shadow-ai/10 transition duration-300" data-image="img1.png">
+                <img src="img1.png" alt="Graphic Design 2" loading="lazy" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+                <span class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent opacity-0 group-hover:opacity-100 transition"></span>
+                <span class="absolute bottom-3 left-3 px-2.5 py-1.5 text-[9px] font-black tracking-wider text-white bg-ai/90 rounded-md opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition" data-i18n="design.view">عرض</span>
+            </button>
 
-                    <h2 class="text-3xl font-bold mb-5">
-                        One profile, multiple skills.
-                    </h2>
+            <button class="gallery-item group relative overflow-hidden aspect-[4/3] rounded-2xl bg-slate-100 border border-slate-200 hover:border-ai hover:-translate-y-1 hover:shadow-xl hover:shadow-ai/10 transition duration-300" data-image="img2.png">
+                <img src="img2.png" alt="Graphic Design 3" loading="lazy" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+                <span class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent opacity-0 group-hover:opacity-100 transition"></span>
+                <span class="absolute bottom-3 left-3 px-2.5 py-1.5 text-[9px] font-black tracking-wider text-white bg-ai/90 rounded-md opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition" data-i18n="design.view">عرض</span>
+            </button>
 
-                    <p class="text-gray-400 text-sm leading-7">
-                        My work combines technology and visual communication.
-                        I develop websites and backend systems while also working
-                        with graphic design, advertising materials and professional
-                        printing workflows.
-                    </p>
+            <button class="gallery-item group relative overflow-hidden aspect-[4/3] rounded-2xl bg-slate-100 border border-slate-200 hover:border-ai hover:-translate-y-1 hover:shadow-xl hover:shadow-ai/10 transition duration-300" data-image="img3.png">
+                <img src="img3.png" alt="Graphic Design 4" loading="lazy" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+                <span class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent opacity-0 group-hover:opacity-100 transition"></span>
+                <span class="absolute bottom-3 left-3 px-2.5 py-1.5 text-[9px] font-black tracking-wider text-white bg-ai/90 rounded-md opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition" data-i18n="design.view">عرض</span>
+            </button>
 
+            <button class="gallery-item group relative overflow-hidden aspect-[4/3] rounded-2xl bg-slate-100 border border-slate-200 hover:border-ai hover:-translate-y-1 hover:shadow-xl hover:shadow-ai/10 transition duration-300" data-image="img4.png">
+                <img src="img4.png" alt="Graphic Design 5" loading="lazy" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+                <span class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent opacity-0 group-hover:opacity-100 transition"></span>
+                <span class="absolute bottom-3 left-3 px-2.5 py-1.5 text-[9px] font-black tracking-wider text-white bg-ai/90 rounded-md opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition" data-i18n="design.view">عرض</span>
+            </button>
+
+            <button class="gallery-item group relative overflow-hidden aspect-[4/3] rounded-2xl bg-slate-100 border border-slate-200 hover:border-ai hover:-translate-y-1 hover:shadow-xl hover:shadow-ai/10 transition duration-300" data-image="img5.png">
+                <img src="img5.png" alt="Graphic Design 6" loading="lazy" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+                <span class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent opacity-0 group-hover:opacity-100 transition"></span>
+                <span class="absolute bottom-3 left-3 px-2.5 py-1.5 text-[9px] font-black tracking-wider text-white bg-ai/90 rounded-md opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition" data-i18n="design.view">عرض</span>
+            </button>
+        </div>
+    </section>
+    <!-- design end -->
+
+    <!-- experience -->
+    <section id="experience" class="mt-5 p-6 sm:p-8 lg:p-10 bg-white border border-slate-200 rounded-[28px] shadow-[0_8px_30px_-18px_rgba(15,23,42,0.15)]">
+        <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4 mb-8">
+            <div>
+                <span class="text-[10px] font-black tracking-[0.22em] uppercase text-print">05 · <span data-i18n="experience.label">الخبرة العملية</span></span>
+                <h2 class="mt-2 text-2xl sm:text-3xl font-black text-navy tracking-tight" data-i18n="experience.title">شهران من العمل داخل بيئة إنتاج حقيقية.</h2>
+                <p class="mt-2 text-[13px] text-slate-500 leading-relaxed max-w-2xl" data-i18n="experience.subtitle">تجربة جمعت بين التصميم الجرافيكي، متابعة الإنتاج الطباعي، وبناء أدوات برمجية تختصر الأعمال المتكررة.</p>
+            </div>
+            <span class="self-start lg:self-auto px-3.5 py-2.5 text-[11px] font-black text-print bg-print/5 border border-print/20 rounded-xl" data-i18n="experience.badge">شهران — خبرة عملية</span>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-[0.95fr_1.05fr] gap-4">
+            <div class="p-5 rounded-2xl bg-gradient-to-br from-amber-50 to-white border border-amber-100">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-11 h-11 grid place-items-center rounded-xl bg-print text-white text-lg shadow-md shadow-print/25">
+                        <i class="fa-solid fa-pen-ruler"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-[14px] font-black text-navy" data-i18n="experience.role">Graphic Designer · Print Production</h3>
+                        <p class="text-[10px] text-slate-400 mt-0.5" data-i18n="experience.context">شركة خاصة في باب الزوار</p>
+                    </div>
                 </div>
+                <p class="text-[11px] text-slate-600 leading-loose" data-i18n="experience.desc">خلال هذه الفترة صممت الكوبونات وكروت الزيارة، وشاركت في العمل المرتبط بإنتاج المطبوعات. لم يقتصر دوري على التصميم؛ بل عملت أيضاً على تحويل بعض المهام المتكررة إلى أدوات برمجية عملية.</p>
+            </div>
 
-
-                <div class="grid grid-cols-2 gap-3">
-
-                    <div class="mini-card">
-                        <strong>Web</strong>
-                        <span>Django Development</span>
-                    </div>
-
-                    <div class="mini-card">
-                        <strong>Code</strong>
-                        <span>Python</span>
-                    </div>
-
-                    <div class="mini-card">
-                        <strong>Data</strong>
-                        <span>PostgreSQL / MySQL</span>
-                    </div>
-
-                    <div class="mini-card">
-                        <strong>Visual</strong>
-                        <span>Graphic Design</span>
-                    </div>
-
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100">
+                    <i class="fa-solid fa-ticket text-code text-lg"></i>
+                    <h3 class="mt-3 text-[12px] font-black text-navy" data-i18n="experience.item1.title">تصميم الكوبونات وكروت الزيارة</h3>
+                    <p class="mt-1 text-[10px] text-slate-500 leading-relaxed" data-i18n="experience.item1.desc">تصميم مواد مطبوعة جاهزة للإنتاج ضمن متطلبات العمل اليومية.</p>
                 </div>
+                <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100">
+                    <i class="fa-solid fa-list-ol text-code text-lg"></i>
+                    <h3 class="mt-3 text-[12px] font-black text-navy" data-i18n="experience.item2.title">برنامج الترقيم التلقائي</h3>
+                    <p class="mt-1 text-[10px] text-slate-500 leading-relaxed" data-i18n="experience.item2.desc">أنشأت برنامجاً لترقيم الكوبونات تلقائياً بدل تنفيذ الترقيم يدوياً.</p>
+                </div>
+                <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100">
+                    <i class="fa-solid fa-compress text-print text-lg"></i>
+                    <h3 class="mt-3 text-[12px] font-black text-navy" data-i18n="experience.item3.title">تصغير ملفات الأرشيف</h3>
+                    <p class="mt-1 text-[10px] text-slate-500 leading-relaxed" data-i18n="experience.item3.desc">أضفت للبرنامج إمكانية تقليل حجم الملفات لأغراض الأرشفة مع الحفاظ على جودة مناسبة.</p>
+                </div>
+                <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100">
+                    <i class="fa-solid fa-gears text-ai text-lg"></i>
+                    <h3 class="mt-3 text-[12px] font-black text-navy" data-i18n="experience.item4.title">أتمتة مهام متكررة</h3>
+                    <p class="mt-1 text-[10px] text-slate-500 leading-relaxed" data-i18n="experience.item4.desc">استخدام البرمجة لتقليل الوقت والخطوات اليدوية في العمل المرتبط بالإنتاج.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- experience end -->
 
+    <!-- about -->
+    <section id="about" class="mt-5 p-6 sm:p-8 lg:p-10 bg-white border border-slate-200 rounded-[28px] shadow-[0_8px_30px_-18px_rgba(15,23,42,0.15)]">
+        <div class="grid grid-cols-1 lg:grid-cols-[1.2fr_0.8fr] gap-8">
+
+            <div>
+                <span class="text-[10px] font-black tracking-[0.22em] uppercase text-code">06 · <span data-i18n="about.label">نبذة</span></span>
+                <h2 class="mt-2 text-2xl sm:text-3xl font-black text-navy tracking-tight leading-snug" data-i18n="about.title">
+                    ثلاثة مجالات واضحة.<br>ومسار مهني واحد مترابط.
+                </h2>
+                <p class="mt-4 text-[13px] text-slate-500 leading-loose max-w-2xl" data-i18n="about.desc">
+                    أعرّف نفسي كمهندس برمجيات ومطوّر ويب، مع مسار مهني يجمع أيضاً بين التصميم الجرافيكي والإنتاج الطباعي.
+                    خلال تجربة عملية امتدت لشهرين داخل مؤسسة طباعة، صممت الكوبونات وكروت الزيارة، وشاركت في بيئة الإنتاج،
+                    ثم استخدمت البرمجة لأتمتة بعض المهام المتكررة؛ من بينها برنامج للترقيم التلقائي للكوبونات مع إمكانية
+                    تصغير حجم الملفات لأغراض الأرشفة مع الحفاظ على جودتها. وفي الوقت نفسه أستطيع تطوير مواقع وأنظمة
+                    وحلول برمجية للمطابع كما للشركات في القطاعات الأخرى.
+                </p>
+
+                <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                    <div class="flex items-start gap-3 p-3 bg-slate-50 border border-slate-100 rounded-xl">
+                        <i class="fa-solid fa-circle-check text-code mt-0.5"></i>
+                        <span class="text-[11px] font-semibold text-slate-600" data-i18n="about.b1">تطوير ويب كامل بـ Django</span>
+                    </div>
+                    <div class="flex items-start gap-3 p-3 bg-slate-50 border border-slate-100 rounded-xl">
+                        <i class="fa-solid fa-circle-check text-design mt-0.5"></i>
+                        <span class="text-[11px] font-semibold text-slate-600" data-i18n="about.b2">تصميم جرافيكي وإنتاج طباعي</span>
+                    </div>
+                    <div class="flex items-start gap-3 p-3 bg-slate-50 border border-slate-100 rounded-xl">
+                        <i class="fa-solid fa-circle-check text-print mt-0.5"></i>
+                        <span class="text-[11px] font-semibold text-slate-600" data-i18n="about.b3">أتمتة مهام الطباعة بالبرمجة</span>
+                    </div>
+                    <div class="flex items-start gap-3 p-3 bg-slate-50 border border-slate-100 rounded-xl">
+                        <i class="fa-solid fa-circle-check text-ai mt-0.5"></i>
+                        <span class="text-[11px] font-semibold text-slate-600" data-i18n="about.b4">هندسة الذكاء الاصطناعي</span>
+                    </div>
+                </div>
             </div>
 
-        </section>
+            <div class="grid grid-cols-2 gap-2.5">
+                <div class="p-4 bg-gradient-to-br from-indigo-50 to-white border border-indigo-100 rounded-xl">
+                    <i class="fa-solid fa-code text-code text-lg"></i>
+                    <div class="mt-3 text-[12px] font-black text-navy" data-i18n="about.card.software">البرمجيات</div>
+                    <div class="mt-0.5 text-[10px] text-slate-500">Django · Python · JS</div>
+                </div>
+                <div class="p-4 bg-gradient-to-br from-pink-50 to-white border border-pink-100 rounded-xl">
+                    <i class="fa-solid fa-palette text-design text-lg"></i>
+                    <div class="mt-3 text-[12px] font-black text-navy" data-i18n="about.card.design">التصميم</div>
+                    <div class="mt-0.5 text-[10px] text-slate-500">Illustrator · Photoshop</div>
+                </div>
+                <div class="p-4 bg-gradient-to-br from-amber-50 to-white border border-amber-100 rounded-xl">
+                    <i class="fa-solid fa-print text-print text-lg"></i>
+                    <div class="mt-3 text-[12px] font-black text-navy" data-i18n="about.card.print">الطباعة</div>
+                    <div class="mt-0.5 text-[10px] text-slate-500">Prepress · Offset · CTP</div>
+                </div>
+                <div class="p-4 bg-gradient-to-br from-emerald-50 to-white border border-emerald-100 rounded-xl">
+                    <i class="fa-solid fa-brain text-ai text-lg"></i>
+                    <div class="mt-3 text-[12px] font-black text-navy" data-i18n="about.card.ai">الأتمتة والذكاء الاصطناعي</div>
+                    <div class="mt-0.5 text-[10px] text-slate-500">Agents · Prompts</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about end -->
 
+    <!-- credentials -->
+    <section id="credentials" class="mt-5 rounded-[28px] bg-gradient-to-br from-navy via-navy-800 to-navy-700 relative overflow-hidden p-6 sm:p-8 lg:p-10">
+        <div class="pointer-events-none absolute -top-24 -right-20 w-80 h-80 rounded-full bg-code/25 blur-[90px]"></div>
+        <div class="pointer-events-none absolute -bottom-24 -left-20 w-80 h-80 rounded-full bg-print/20 blur-[90px]"></div>
 
-        <!-- Footer -->
-        <footer class="glass-card rounded-full p-4 px-8 flex flex-col md:flex-row justify-between items-center gap-3">
+        <div class="relative grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
+            <a href="https://mouazbrai.github.io/cfpa-beraki/" target="_blank" rel="noopener"
+               class="group rounded-2xl bg-white/[0.06] border border-white/10 p-5 hover:bg-white/[0.10] hover:-translate-y-1 transition duration-300">
+                <div class="flex items-start gap-4">
+                    <div class="w-12 h-12 shrink-0 grid place-items-center rounded-xl bg-code/20 border border-code/30 text-code-light text-xl group-hover:scale-105 transition">
+                        <i class="fa-solid fa-certificate"></i>
+                    </div>
+                    <div>
+                        <div class="text-[10px] font-black tracking-[0.18em] uppercase text-code-light mb-1" data-i18n="cert.label">شهادة التأهيل</div>
+                        <h3 class="text-white text-lg font-black tracking-tight" data-i18n="cert.title">شهادة تأهيل: إنشاء مواقع الويب WEB الثابت والمتنقل</h3>
+                        <p class="mt-1.5 text-slate-400 text-[11px] leading-relaxed" data-i18n="cert.desc">مشروع نهاية التكوين التطبيقي — افتح المشروع.</p>
+                    </div>
+                </div>
+            </a>
 
-            <div class="flex items-center gap-3 text-[9px] font-bold text-gray-500 uppercase tracking-widest">
-
-                <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
-
-                Available for collaboration
-
+            <div class="group rounded-2xl bg-white/[0.06] border border-white/10 p-5 hover:bg-white/[0.10] hover:-translate-y-1 transition duration-300">
+                <div class="flex items-start gap-4">
+                    <div class="w-12 h-12 shrink-0 grid place-items-center rounded-xl bg-white/10 border border-white/10 text-white text-xl group-hover:scale-105 transition">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <div>
+                        <div class="text-[10px] font-black tracking-[0.18em] uppercase text-white/60 mb-1" data-i18n="degree.label">التكوين التقني</div>
+                        <h3 class="text-white text-lg font-black tracking-tight" data-i18n="degree.title">تقني سامي الاتصال والصناعات المطبعية — خيار: دراسة وإنجاز المنتجات المطبعية</h3>
+                        <p class="mt-1.5 text-slate-400 text-[11px] leading-relaxed" data-i18n="degree.desc">تكوين تقني متخصص في الطباعة، الإنتاج، وما قبل الطباعة، مع تطبيقات عملية في بيئة إنتاج حقيقية.</p>
+                    </div>
+                </div>
             </div>
 
-            <div class="text-[9px] text-gray-600">
-                © 2026 Mouaz Brai
+            <div class="group rounded-2xl bg-white/[0.06] border border-white/10 p-5 hover:bg-white/[0.10] hover:-translate-y-1 transition duration-300">
+                <div class="flex items-start gap-4">
+                    <div class="w-12 h-12 shrink-0 grid place-items-center rounded-xl bg-print/20 border border-print/30 text-print-light text-xl group-hover:scale-105 transition">
+                        <i class="fa-solid fa-file-pdf"></i>
+                    </div>
+                    <div class="flex-1">
+                        <div class="text-[10px] font-black tracking-[0.18em] uppercase text-print-light mb-1" data-i18n="mfe.label">مذكرة التخرج</div>
+                        <h3 class="text-white text-lg font-black tracking-tight" data-i18n="mfe.title">Mémoire de Fin d'Études — MFE.pdf</h3>
+                        <p class="mt-1.5 text-slate-400 text-[11px] leading-relaxed" data-i18n="mfe.desc">مذكرة نهاية التخرج التي توثق التربص التطبيقي داخل مؤسسة الطباعة في الجزائر سيا (SIA).</p>
+                        <a href="mfe.pdf" download class="mt-3 inline-flex items-center gap-2 px-3.5 py-2.5 rounded-lg bg-white text-navy text-[10px] font-black hover:bg-slate-100 transition">
+                            <i class="fa-solid fa-download"></i><span data-i18n="mfe.button">تحميل المذكرة</span>
+                        </a>
+                    </div>
+                </div>
             </div>
 
-        </footer>
+            <div class="group rounded-2xl bg-white/[0.06] border border-white/10 p-5 hover:bg-white/[0.10] hover:-translate-y-1 transition duration-300">
+                <div class="flex items-start gap-4">
+                    <div class="w-12 h-12 shrink-0 grid place-items-center rounded-xl bg-emerald-400/10 border border-emerald-300/20 text-emerald-300 text-xl group-hover:scale-105 transition">
+                        <i class="fa-solid fa-language"></i>
+                    </div>
+                    <div>
+                        <div class="text-[10px] font-black tracking-[0.18em] uppercase text-emerald-300 mb-1" data-i18n="languages.label">اللغات</div>
+                        <h3 class="text-white text-lg font-black tracking-tight" data-i18n="languages.title">العربية · الإنجليزية · الفرنسية</h3>
+                        <p class="mt-1.5 text-slate-400 text-[11px] leading-relaxed" data-i18n="languages.desc">العربية: متحدث أصلي · الإنجليزية: مستوى عام A2 مع قوة في بعض المصطلحات المتخصصة · الفرنسية: مستوى عام ومصطلحات المجال.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- credentials end -->
 
-    </div>
+    <!-- footer -->
+    <footer class="mt-5 flex flex-col sm:flex-row items-center justify-between gap-3 px-5 py-5 text-[11px] font-bold text-slate-500 bg-white border border-slate-200 rounded-2xl">
+        <span>© 2026 <span data-i18n="brand.name">Mouaz Brai</span></span>
+        <div class="flex items-center gap-4 flex-wrap justify-center">
+            <a href="mailto:mouazbrai@gmail.com" class="hover:text-code transition inline-flex items-center gap-1.5">
+                <i class="fa-solid fa-envelope"></i> mouazbrai@gmail.com
+            </a>
+            <a href="https://wa.me/213671095233" target="_blank" rel="noopener" class="hover:text-code transition inline-flex items-center gap-1.5">
+                <i class="fa-brands fa-whatsapp"></i> 0671 09 52 33
+            </a>
+            <a href="tel:+213542745422" class="hover:text-code transition inline-flex items-center gap-1.5">
+                <i class="fa-solid fa-phone"></i> 0542 74 54 22
+            </a>
+            <a href="https://github.com/mouazbrai" target="_blank" rel="noopener" class="hover:text-code transition"><i class="fa-brands fa-github text-base"></i></a>
+            <a href="https://www.linkedin.com/in/mouaz-brai-55ba632b3/" target="_blank" rel="noopener" class="hover:text-code transition"><i class="fa-brands fa-linkedin text-base"></i></a>
+        </div>
+        <span class="text-slate-400 text-[10px]" data-i18n="footer.tagline">Software · Design · Print · Automation</span>
+    </footer>
+    <!-- footer end -->
+</div>
 
+<!-- modal -->
+<div id="image-modal"
+     class="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-[rgba(4,10,20,0.92)] backdrop-blur-sm"
+     aria-hidden="true" role="dialog" aria-modal="true">
+    <button id="close-modal" aria-label="Close preview"
+            class="absolute top-5 left-5 sm:top-6 sm:left-7 w-11 h-11 grid place-items-center text-white text-2xl rounded-full bg-white/10 hover:bg-white/20 hover:text-sky-300 transition">
+        <i class="fa-solid fa-xmark"></i>
+    </button>
+    <img id="modal-image" src="" alt="Preview"
+         class="max-w-full max-h-[90vh] rounded-2xl shadow-2xl select-none">
+</div>
+<!-- modal end -->
 
-    <!-- Image Modal -->
-    <div id="image-modal"
-        class="fixed inset-0 z-50 hidden items-center justify-center p-6 bg-black/90">
-
-        <button id="close-modal"
-            class="absolute top-6 right-6 text-white text-3xl">
-            ×
-        </button>
-
-        <img id="modal-image"
-            src=""
-            alt="Preview"
-            class="max-w-full max-h-[90vh] rounded-3xl shadow-2xl">
-
-    </div>
-
-
-    <!-- Interactive JavaScript -->
-    <script src="main.js"></script>
 </body>
 
 </html>
