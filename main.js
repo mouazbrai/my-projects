@@ -109,7 +109,7 @@ function buildSlides() {
         cardsHTML += `
           <div class="project-card web-card">
             <div class="card-img-box">
-              <img src="${imageFilename}" alt="${item.title}" class="work-img" onerror="handleImgFallback(this)">
+              <img src="${imageFilename}" alt="${item.title}" class="work-img" loading="lazy" onerror="handleImgFallback(this)">
               <div class="card-overlay">
                 <span class="overlay-type">${item.projectType}</span>
                 <p class="overlay-desc">${item.description}</p>
@@ -126,7 +126,7 @@ function buildSlides() {
         cardsHTML += `
           <div class="project-card graphic-card">
             <div class="card-img-box">
-              <img src="${imageFilename}" alt="${item.title}" class="work-img" onerror="handleImgFallback(this)">
+              <img src="${imageFilename}" alt="${item.title}" class="work-img" loading="lazy" onerror="handleImgFallback(this)">
               <div class="card-overlay">
                 <span class="overlay-type">${item.categoryLabel}</span>
                 <p class="overlay-desc">${item.description}</p>
