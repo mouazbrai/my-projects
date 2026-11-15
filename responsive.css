@@ -1,0 +1,154 @@
+/* Tablet and medium screens */
+@media (max-width: 992px) {
+  nav {
+    padding: 20px 30px;
+  }
+
+  .about-container,
+  .contents-container,
+  .projects-container,
+  .contact-container {
+    padding: 40px 30px;
+  }
+
+  .home {
+    padding: 40px 30px;
+    min-height: auto;
+  }
+
+  .home-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 40px;
+    padding-bottom: 30px;
+  }
+
+  .home-text-content {
+    align-items: center;
+  }
+
+  .home-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .home-buttons {
+    justify-content: center;
+  }
+
+  .home-bottom-info {
+    position: static;
+    margin-top: 20px;
+  }
+
+  .qualifications-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .qual-box.full-width {
+    grid-column: span 1;
+  }
+
+  .cards-grid.count-3,
+  .cards-grid.count-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .prev-arrow {
+    left: -20px;
+  }
+
+  .next-arrow {
+    right: -20px;
+  }
+}
+
+/* Mobile and small screens */
+@media (max-width: 768px) {
+  nav {
+    padding: 15px 20px;
+  }
+
+  nav .nav-list {
+    gap: 15px;
+  }
+
+  nav .nav-url {
+    font-size: 0.8rem;
+  }
+
+  .about-container,
+  .contents-container,
+  .projects-container,
+  .contact-container {
+    padding: 30px 20px;
+  }
+
+  .home {
+    padding: 30px 20px;
+  }
+
+  .home-main-heading {
+    font-size: 2.4rem;
+  }
+
+  .home-sub-heading {
+    font-size: 1.1rem;
+  }
+
+  .home-image-wrapper {
+    height: 360px;
+  }
+
+  .image-box-back {
+    width: 260px;
+    height: 310px;
+    right: 15px;
+  }
+
+  .image-box-front {
+    width: 250px;
+    height: 300px;
+    left: 15px;
+  }
+
+  .jumbotron-display {
+    padding: 20px;
+  }
+
+  .cards-grid.count-3,
+  .cards-grid.count-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .slider-controls-wrapper {
+    padding-bottom: 60px;
+  }
+
+  .slider-arrow {
+    top: auto;
+    bottom: 0;
+    transform: none;
+  }
+
+  .prev-arrow {
+    left: calc(50% - 55px);
+  }
+
+  .next-arrow {
+    right: calc(50% - 55px);
+  }
+
+  .thank-you-heading {
+    font-size: 3rem;
+  }
+
+  .contact-links-inline {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .contact-links-inline span {
+    display: none;
+  }
+}
